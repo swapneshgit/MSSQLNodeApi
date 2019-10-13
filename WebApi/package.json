@@ -4,19 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node dist/app.js",
-    "dev":"nodemon src/app.ts",
-    "build":"tsc -p ."
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "build": "tsc -p ."
   },
   "repository": {
     "type": "git"
-    
   },
   "author": "swapnesh pal",
   "license": "ISC",
-  "bugs": {
-  },
- 
+  "bugs": {},
   "dependencies": {
     "express": "^4.17.1"
   },

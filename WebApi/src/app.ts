@@ -1,8 +1,8 @@
-import express from 'express';
-const app=express();
-
-app.get('/',(req,res,next)=>{
-    res.status(200).json({"message":"API Running"});
+import express,{Application,Request,Response,NextFunction} from 'express';
+const app:Application = express();
+app.set('port',process.env.PORT || 5000);
+app.get('/', (req:Request, res:Response, next:NextFunction) => {
+    res.status(200).json({ "message": "API Running" });
 })
 
-app.listen(5000,()=>{console.log("Api start listning")});
+export default app;
