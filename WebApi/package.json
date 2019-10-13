@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node dist/app.js",
+    "dev":"nodemon src/app.ts",
+    "build":"tsc -p ."
+  },
+  "repository": {
+    "type": "git"
+    
+  },
+  "author": "swapnesh pal",
+  "license": "ISC",
+  "bugs": {
+  },
+ 
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/node": "^12.7.12",
+    "nodemon": "^1.19.3",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}
